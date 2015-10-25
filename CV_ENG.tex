@@ -1,0 +1,130 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Use Xelatex and UTF-8
+
+\documentclass[ENG]{SealZhang}
+% 用这一句引用SealZhang类 选项不填默认英文 可以写[ENG]或者[CHN]
+
+\usepackage{fontspec} 					%for loading fonts
+\setmainfont[SmallCapsFont={Fontin-SmallCaps}]{Fontin}
+
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\usepackage{longtable}
+
+\begin{document}
+
+%-----------------TITLE-------------
+\par{\centering
+		{%\includegraphics[width = 0.2\textwidth]{photo.jpg} \quad
+		\Huge \textsc{Zhang Chuheng} }
+		\bigskip\par}
+
+
+
+%--------------SECTIONS---------
+\section{Personal Infomation}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Hubei Province, China  | 29 March 1994 \\
+    \textsc{Address:}   & Dorm 4-430, Nanyuan, No.22 Hankou Road, \\
+                        & Nanjing University, Nanjing, Jiangsu Province, \\
+                        & P.R.China \\
+    \textsc{Phone:}     & +86 15851810218\\
+    \textsc{Email:}     & zhangchuheng123@live.com \\
+    \textsc{Homepage:}  & \href{http://sealzhang.tk}{sealzhang.tk (for more information)} 
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\textsc{Sept} 2012 & Undergraduate\\
+till now & \textbf{Nanjing University}, Nanjing, JIANGSU, \textsc{China}\\
+& Photoelectric Science, Physics Department \\
+&\normalsize \textsc{\underline{Gpa}}: 4.564/5.0 91.28/100 \textsc{\underline{Ranking}}: 5/152 (First six semesters)\\
+\\
+\textsc{Sept} 2006 & Junior and Senior High School\\
+-\textsc{Sept} 2012 & \textbf{Chengdu Foreign Language School}, Chengdu, SICHUAN, \textsc{China}\\
+
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Research Experiences}
+\begin{tabular}{p{1.8cm}|p{12cm}}
+
+\textsc{May, 2014} & Research on \textit{Super Resolution Imaging of Fresnel Incoherent Hologram} \\
+- present&\emph{Department of Optic Electronics, School of Physics, Nanjing University}\\
+& Supervisor: Prof. Ding Jianping \\
+&\footnotesize{The aim of our research is to obtain image of Fresnel Incoherent Hologram of high quality. Both experimental construction and computational processing are concerned. I take the part of the project concerning computational reconstruction of the whole optical process in MATLAB and algorithm designing to refine the image obtained by experiments. The algorithm adopted is based on phase-shifting.}\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Summer, 2015} & Research on \textit{Ultrahigh-resolution optical imaging deep in tissue – Nanoscope-in-a-Needle} \\
+&\emph{Optical+Biomedical Engineering Laboratory, University of West Australia}\\
+& Supervisor: Prof. David Sampson \\
+&\footnotesize{The group is the pioneer of a Microscope-in-a-Needle, an OCT based novel optical and imaging technique. The part of work I have done is aiming at segmenting the biological images gained from the experiment using machine learning approach. The combination of MATLAB and Weka software package are used in the developed tool which is tested and works well on a set of ssTEM images of neural tissue of Drosophila Larva.}\\
+
+\end{tabular}
+
+\begin{tabular}{p{1.8cm}|p{12cm}}
+
+\textsc{Sep, 2015 - present} & Dissertation Research on \textit{Evolutionary Algorithm on the Learning of Deep Network}\\
+&\emph{LAMDA(Learning and mining from DatA), Department of Computer Science, Nanjing University}\\
+& Supervisor: A/Prof. Yu Yang \\
+&\footnotesize{As it is known, traditional back propagation algorithm may encounter problems when applied to deep neural networks. The aim of this research is to find an algorithm which involves the idea of Evolutionary Algorithm to the conventional algorithm to train a deep network. Now I am working intensely on this research.}\\
+
+\end{tabular}
+
+\section{Activities}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{2012} & Member of Propaganda Department at the Student Union | Member of Technology Department at \textsc{Pivot Society} \\
+ 
+ \multicolumn{2}{c}{} \\
+ 
+\textsc{2013} &  Vice President of \textsc{Pivot Society} | Minister of Propaganda Department at society of \textsc{SRTP} \\
+
+ \multicolumn{2}{c}{} \\
+ 
+\textsc{March, 2014} &  Primary Planner of \textsc{WanYouQingNianHui} with \textsc{Guokr.com}\\
+
+ \multicolumn{2}{c}{} \\
+ 
+\textsc{May, 2014} &  Primary Planner of \textsc{Oral History of Physics Department of Nanjing University - dedicated to 100th anniversary} \\ & Resulting publication: \textsc{Oral History of Physics Department of Nanjing University} - \textsc{Higer Education Press}\\
+
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Awards and Honors}
+\begin{tabular}{rll}
+    \textsc{Year of 2012} & National Scholarship\footnotesize(8,000 \textsc{RMB})\normalsize & Top 1\%\\
+    \textsc{Year of 2013} & XingyeZeren Scholarship\footnotesize(2,500 \textsc{RMB})\normalsize & Top 5\%\\
+    \textsc{Year of 2013} & Renmin Scholarship for Outstanding in Social Works & Top 15\%\\
+    \textsc{Nov. 2013} & University Physics Competition(UPC) \footnotesize (USA) \normalsize & Silver Prize \\
+    \textsc{Sept. 2014} & Undergraduate Mathematical Contest in Modeling \footnotesize (CHN,leader) \normalsize & Second Prize \\
+     \textsc{Feb. 2015} & Mathematical Contest in Modeling (MCM)    \footnotesize (USA,leader) \normalsize &  Meritorious\\
+\end{tabular}
+
+%Section: Languages
+\section{Professional Skills}
+\begin{tabular}{rl}
+ \textsc{Programming/Software:}&C/C++(proficient), C\#, PHP, MySQL, HTML, \\& \LaTeX (proficient), MATLAB(proficient),\\ & Wolfram Mathematica, COMSOL\\
+\textsc{Theoretical/Experimental:}&Basic model construction in Physics, \\&Optical experiment setup\\
+\end{tabular}
+
+\section{Standarized Test}
+\begin{tabular}{l|ll}
+ \textsc{Nov. 2013} & TOEFL(iBT) & 92(Reading 24, Listening 26, Speaking 20, Writing 22) \\
+ \textsc{Dec. 2014} & GRE & Verbal 153, Quantitative 170, Analytical Writing 4.0 \\
+ \textsc{Jun. 2013} & CET-4 & 585 \\
+ \textsc{Dec. 2013} & CET-6 & 532 \\
+ \textsc{Dec. 2013} & Computer Level Test & Fine (level 2, C-language) \\
+\end{tabular}
+
+\clearpage
+
+
+\end{document}
