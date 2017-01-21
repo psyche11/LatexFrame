@@ -2,12 +2,14 @@
 %!TEX encoding = UTF-8 Unicode
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SealZhang}[2015/3/29 beta1.0 thesis]
+\ProvidesClass{Sketch}[2017/01/21 beta2.0 thesis]
  
 \LoadClass[a4paper, 11pt]{article}
 \RequirePackage{geometry,fontspec,xltxtra,xunicode,listings,latexsym,amssymb,amsmath,xcolor,colortbl,ifthen,graphicx,xspace,eucal,verbatim,enumerate,indentfirst,hyperref,ulem,titlesec,multicol}
 \usepackage[justification=centering]{caption}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\sloppy
 
 % ----- Language Selection -----
 \DeclareOption{CHN}
@@ -17,6 +19,7 @@
 	\renewcommand{\contentsname}{目录}%
 	\renewcommand{\today}{\number\year 年\number\month 月\number\day 日}%
 	\renewcommand\refname{参考文献}%
+	\renewcommand{\abstractname}{摘要}
 	\setlength{\parindent}{2em}}
 \DeclareOption{ENG}{\typeout{当前设定为英文}}
 \ExecuteOptions{ENG}
@@ -56,5 +59,3 @@
     stringstyle=\color{orange},
 }
 \lstloadlanguages{C,C++,Java,Matlab,Mathematica}
-
-% 2015/10/25 add titlesec to enable costomizing \section format
