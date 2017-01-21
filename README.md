@@ -27,6 +27,8 @@ This is a Latex template that I use to write some simple notes or articles. We y
 \end{document}
 ```
 
+As you see, the ``Sketch.cls`` file that I have written is an all-in-one pakage, it satisfies my daily writting requirements - including class papers, weekly report with mathmatical formulas or notes on some specific subject. I keep developing this file since 2015, and it's now able to switch between Chinese and English by option - ``CHN`` or ``ENG``.
+
 If you want to use it, just download the folder and write your tex file in ``sample.tex``. All the folders and files are prepared ready for your writting, including bibtex related files. 
 
 Let's get started...
