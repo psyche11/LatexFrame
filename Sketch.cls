@@ -5,7 +5,7 @@
 \ProvidesClass{Sketch}[2017/01/21 beta2.0 thesis]
  
 \LoadClass[a4paper, 11pt]{article}
-\RequirePackage{geometry,fontspec,xltxtra,xunicode,listings,latexsym,amssymb,amsmath,xcolor,colortbl,ifthen,graphicx,xspace,eucal,verbatim,enumerate,indentfirst,hyperref,ulem,titlesec,multicol}
+\RequirePackage{geometry,fontspec,xltxtra,xunicode,listings,latexsym,amssymb,amsmath,xcolor,colortbl,ifthen,graphicx,xspace,eucal,verbatim,enumerate,indentfirst,hyperref,ulem,titlesec,multicol,bm}
 \usepackage[justification=centering]{caption}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
